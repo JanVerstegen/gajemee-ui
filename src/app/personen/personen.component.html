@@ -1,3 +1,35 @@
-<p>
-  personen works!
-</p>
+<h2>Mijn Personen</h2>
+
+<ul class="personen">
+  <li *ngFor="let persoon of personen" [class.selected]="persoon === selectedPersoon" (click)="onSelect(persoon)">
+    <span class="badge">{{persoon.id}}</span> {{persoon.voornaam}}
+  </li>
+</ul>
+
+<div *ngIf="selectedPersoon">
+
+  <h2>{{ selectedPersoon.voornaam | uppercase }} Details</h2>
+  <div>
+    <span>id: </span>{{selectedPersoon.id}}</div>
+
+  <p></p>
+
+  <div>
+    <label>voornaam:
+      <input [(ngModel)]="selectedPersoon.voornaam" placeholder="voornaam">
+    </label>
+  </div>
+
+  <div>
+    <label>achternaam:
+      <input [(ngModel)]="selectedPersoon.achternaam" placeholder="achternaam">
+    </label>
+  </div>
+
+  <div>
+    <label>leeftijd:
+      <input [(ngModel)]="selectedPersoon.leeftijd" placeholder="leeftijd">
+    </label>
+  </div>
+
+</div>
