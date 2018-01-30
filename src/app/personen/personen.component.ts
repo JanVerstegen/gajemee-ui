@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Persoon } from '../persoon';
 import { PERSONEN } from "../mock-personen";
+import { PersoonService } from '../persoon.service';
 
 @Component({
   selector: 'app-personen',
@@ -9,13 +11,12 @@ import { PERSONEN } from "../mock-personen";
 })
 export class PersonenComponent implements OnInit {
 
-  personen = PERSONEN;
-
+  personen: Persoon[];
   selectedPersoon: Persoon;
 
-onSelect(persoon: Persoon): void {
-  this.selectedPersoon = persoon;
-}
+  onSelect(persoon: Persoon): void {
+    this.selectedPersoon = persoon;
+  }
 
   persoon: Persoon = {
     id: 1,
