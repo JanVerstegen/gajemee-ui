@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Persoon } from '../persoon';
-import { PERSONEN } from "../mock-personen";
 import { PersoonService } from '../persoon.service';
 
 @Component({
@@ -11,23 +10,20 @@ import { PersoonService } from '../persoon.service';
 })
 export class PersonenComponent implements OnInit {
 
-  personen: Persoon[];
   selectedPersoon: Persoon;
+  personen: Persoon[];
+
+  constructor(private persoonService: PersoonService) { }
+
+  ngOnInit() {
+    this.getPersonen();
+  }
 
   onSelect(persoon: Persoon): void {
     this.selectedPersoon = persoon;
   }
 
-  persoon: Persoon = {
-    id: 1,
-    voornaam: 'Jan',
-    achternaam: 'Verstegen',
-    leeftijd: 26
-  };
-
-  constructor() { }
-
-  ngOnInit() {
+  getPersonen(): void {
+    this.persoonService.getPersonen().subscribe(personen => this.personen = personen);
   }
-
 }

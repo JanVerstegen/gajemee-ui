@@ -7,12 +7,15 @@ import { PersonenComponent } from './personen/personen.component';
 import { PersoonDetailComponent } from './persoon-detail/persoon-detail.component';
 
 import { PersoonService } from "./persoon.service";
+import { MessagesComponent } from './messages/messages.component';
+import { MessageService } from './message.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     PersonenComponent,
-    PersoonDetailComponent
+    PersoonDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +23,7 @@ import { PersoonService } from "./persoon.service";
   ],
   providers: [
     PersoonService,
+    MessageService
   ],
   bootstrap: [
     AppComponent
