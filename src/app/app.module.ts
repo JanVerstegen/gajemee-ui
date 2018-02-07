@@ -14,6 +14,7 @@ import { SearchComponent } from './search/search.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { CreateprofileComponent } from './createprofile/createprofile.component';
 import { CreateeventComponent } from './createevent/createevent.component';
+import { EvenementComponent } from './evenement/evenement.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CreateeventComponent } from './createevent/createevent.component';
     SearchComponent,
     CategoriesComponent,
     CreateprofileComponent,
-    CreateeventComponent
+    CreateeventComponent,
+    EvenementComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,9 @@ export class Persoon {
     voornaam: string;
     achternaam: string;
     email: string;
-    paswoord: string;
+    wachtwoord: string;
     woonplaats: string;
+    verjaardag: string;
+    voorkeuren: string[];
+
   }

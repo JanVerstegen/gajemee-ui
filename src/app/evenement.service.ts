@@ -7,18 +7,17 @@ import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import 'rxjs/add/operator/map'
 
-import { Persoon } from "./persoon";
+import { Evenement } from "./evenement";
 import { MessageService } from "./message.service";
 
 @Injectable()
-export class PersoonService {
-
+export class EvenementService {
   private headers = new Headers({ 'Content-Type': 'application/json' });
 
   constructor(private http: Http) { }
 
-  getPersonen(): Observable<Persoon[]> {
+  getEvenementen(): Observable<Evenement[]> {
     // Todo: send the message _after_ fetching the Personen
-    return this.http.get("http://localhost:8080/persoon").map(res => res.json());
+    return this.http.get("http://localhost:8080/evenementen").map(res => res.json());
   }
 }
