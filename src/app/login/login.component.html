@@ -1,18 +1,52 @@
-<h2>{{ title}}</h2>
-<h3>
-<table>
-  <tr>
-    <td>Email: </td>
-    <td>
-      <input type="email" placeholder="{{input_email}}">
-    </td>
-  </tr>
-  <tr>
-    <td>Wachtwoord: </td>
-    <td>
-      <input type="password" placeholder="{{input_password}}">
-    </td>
-  </tr>
-</table>
-<button (click)="login()">Login</button>
-</h3>
+<style>
+  input[type=text],
+  input[type=date],
+  input[type=email],
+  input[type=password],
+  select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+</style>
+
+
+<h2><u>Login</u></h2>
+<div>
+  <form action="">
+    <label for="mail">Email</label>
+    <br>
+    <input type="email" id="mail" name="email" placeholder="Je Email.." required>
+    <br>
+    <label for="pass">Wachtwoord</label>
+    <br>
+    <input type="password" id="pass" name="password" placeholder="Je Wachtwoord.." required>
+    <br>
+    <input type="submit" value="Login">
+  </form>
+</div>

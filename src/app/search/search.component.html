@@ -1,96 +1,136 @@
-<h2>Search</h2>
-<table>
-  <tr>
-    <td></td>
-    <td>
-      <input type="text" value="{{input_search}}" size="60">
-      <button>Search</button>
-    </td>
+<style>
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=date]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
 
-  </tr>
-</table>
+
+  input[type=submit] {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+</style>
+
+<h2><u>Search</u></h2>
+<div>
+  <input type="text" value="{{input_search}}" placeholder="Search...">
+  <br>
+  <input type="submit" value="Search">
 
 
 
-<table>
-  <tr>
-    <td></td>
-    <td>
-      <input type="date">
-    </td>
-    <td></td>
-    <td>
-      <input type="date">
-    </td>
-  </tr>
-</table>
-<details>
-  <summary>
-    Categorien
-  </summary>
   <table>
     <tr>
+      <td>van</td>
       <td>
-        <input type="checkbox" value="checked">
+        <input type="date">
       </td>
-      <td>CREATIEF </td>
+      <td>tot</td>
       <td>
-        <input type="checkbox">
+        <input type="date">
       </td>
-      <td>CONCERTEN </td>
-      <td>
-        <input type="checkbox">
-      </td>
-      <td>DANSEN </td>
-    </tr>
-    <tr>
-      <td>
-        <input type="checkbox">
-      </td>
-      <td>ETEN_EN_DRINKEN </td>
-      <td>
-        <input type="checkbox">
-      </td>
-      <td>FILMS </td>
-      <td>
-        <input type="checkbox">
-      </td>
-      <td>LITERAIR </td>
-    </tr>
-    <tr>
-      <td>
-        <input type="checkbox">
-      </td>
-      <td>MUSEUM </td>
-      <td>
-        <input type="checkbox">
-      </td>
-      <td>ONTSPANNING </td>
-      <td>
-        <input type="checkbox">
-      </td>
-      <td>POLITIEK </td>
-    </tr>
-    <tr>
-      <td>
-        <input type="checkbox">
-      </td>
-      <td>SPELLEN </td>
-      <td>
-        <input type="checkbox">
-      </td>
-      <td>SPORTIEF </td>
-      <td>
-        <input type="checkbox">
-      </td>
-      <td>THEATER </td>
-    </tr>
-    <tr>
-      <td>
-        <input type="checkbox">
-      </td>
-      <td>WETENSCHAP </td>
     </tr>
   </table>
+  <details>
+    <summary>
+      Categorien
+    </summary>
+    <table>
+      <tr>
+        <td>
+          <input type="checkbox" value="checked">
+        </td>
+        <td>CREATIEF </td>
+        <td>
+          <input type="checkbox">
+        </td>
+        <td>CONCERTEN </td>
+        <td>
+          <input type="checkbox">
+        </td>
+        <td>DANSEN </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox">
+        </td>
+        <td>ETEN_EN_DRINKEN </td>
+        <td>
+          <input type="checkbox">
+        </td>
+        <td>FILMS </td>
+        <td>
+          <input type="checkbox">
+        </td>
+        <td>LITERAIR </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox">
+        </td>
+        <td>MUSEUM </td>
+        <td>
+          <input type="checkbox">
+        </td>
+        <td>ONTSPANNING </td>
+        <td>
+          <input type="checkbox">
+        </td>
+        <td>POLITIEK </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox">
+        </td>
+        <td>SPELLEN </td>
+        <td>
+          <input type="checkbox">
+        </td>
+        <td>SPORTIEF </td>
+        <td>
+          <input type="checkbox">
+        </td>
+        <td>THEATER </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="checkbox">
+        </td>
+        <td>WETENSCHAP </td>
+      </tr>
+    </table>
 
-</details>
+  </details>
+</div>

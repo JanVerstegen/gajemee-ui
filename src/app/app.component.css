@@ -36,7 +36,7 @@ div.container {
 header, footer {
   padding: 1em;
   color: white;
-  background-color: black;
+  background-color: rgb(73, 73, 73);
   clear: left;
   text-align: center;
 }
@@ -47,4 +47,17 @@ input[type=text] {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
 }
