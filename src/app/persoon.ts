@@ -2,5 +2,7 @@ export class Persoon {
     id: number;
     voornaam: string;
     achternaam: string;
-    leeftijd: number;
+    email: string;
+    paswoord: string;
+    woonplaats: string;
   }

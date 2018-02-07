@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'GaJeMee?!';
+
+  clickLogin(){
+    alert("The ontoggle event occured");
+  }
+  
 }

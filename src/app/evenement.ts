@@ -7,5 +7,6 @@ export class Evenement {
     evenement_naam: string;
     plaats: string;
     uitnodigingstekst: string;
-    categories: string;
+    categorie_id: number;
+    organisator_id: number;
   }

@@ -1,5 +1,76 @@
-<h2>{{ title }}</h2>
-<h3>
-    <app-personen></app-personen>
-    <app-messages></app-messages>
-</h3>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GaJeMee?!</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="top">
+                <button (click)="clickLogin()">Inloggen</button>
+
+                <button>Registreren</button>
+            </div>
+            <img src="assets/images/gajemeelogo.png" alt="gajemee" height="100" width="400">
+        </header>
+    </div>
+    <nav>
+        <a href="/2/">Bij jou in de buurt</a>
+        <a href="/2/">Categorien</a>
+        <a href="/js/">Mijn Calender</a>
+        <a href="/jquery/">Willekeurig Evenement</a>
+    </nav>
+    <hr>
+    <h2>
+        <b>
+            <u>Bij Jou In De Buurt</u>
+        </b>
+    </h2>
+    <table>
+        <tr>
+            <td>
+                <button>
+                    < </button>
+            </td>
+            <td>
+                <input type="image" src="assets/images/gajemeeblack.jpg" width="400" height="100" alt="Submit">
+            </td>
+            <td>
+                <input type="image" src="assets/images/gajemeeblack.jpg" width="400" height="100" alt="Submit">
+            </td>
+            <td>
+                <input type="image" src="assets/images/gajemeeblack.jpg" width="400" height="100" alt="Submit">
+            </td>
+            <td>
+                <button>></button>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+    <details>
+        <summary>
+            Categorien
+        </summary>
+        <app-categories></app-categories>
+    </details>
+
+    <hr>
+    <h3>
+        <app-personen></app-personen>
+        <app-messages></app-messages>
+        <hr>
+        <app-login></app-login>
+        <hr>
+        <app-search></app-search>
+        <hr>
+        
+    </h3>
+    <app-createprofile></app-createprofile>
+    <footer>Copyright &copy; 'n stuff</footer>
+</body>
+
+</html>

@@ -9,13 +9,23 @@ import { PersoonDetailComponent } from './persoon-detail/persoon-detail.componen
 import { PersoonService } from "./persoon.service";
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
+import { LoginComponent } from './login/login.component';
+import { SearchComponent } from './search/search.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { CreateprofileComponent } from './createprofile/createprofile.component';
+import { CreateeventComponent } from './createevent/createevent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PersonenComponent,
     PersoonDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    LoginComponent,
+    SearchComponent,
+    CategoriesComponent,
+    CreateprofileComponent,
+    CreateeventComponent
   ],
   imports: [
     BrowserModule,

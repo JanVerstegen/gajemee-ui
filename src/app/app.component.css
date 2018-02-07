@@ -1,29 +1,50 @@
 /* AppComponent's private CSS styles */
 h1 {
-    font-size: 1.2em;
-    color: #999;
-    margin-bottom: 0;
-  }
-  h2 {
-    font-size: 2em;
-    margin-top: 0;
-    padding-top: 0;
-  }
-  nav a {
-    padding: 5px 10px;
-    text-decoration: none;
-    margin-top: 10px;
-    display: inline-block;
-    background-color: #eee;
-    border-radius: 4px;
-  }
-  nav a:visited, a:link {
-    color: #607D8B;
-  }
-  nav a:hover {
-    color: #039be5;
-    background-color: #CFD8DC;
-  }
-  nav a.active {
-    color: #039be5;
-  }
+  font-size: 1.2em;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  margin-top: 0;
+  padding-top: 0;
+}
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+  text-align: center;
+}
+nav a:visited, a:link {
+  color: rgb(40, 51, 56);
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+}
+nav a.active {
+  color: #039be5;
+}
+div.container {
+  width: 100%;
+  border: 1px solid gray;
+}
+header, footer {
+  padding: 1em;
+  color: white;
+  background-color: black;
+  clear: left;
+  text-align: center;
+}
+div.top {
+  text-align: right
+}
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}

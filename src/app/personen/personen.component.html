@@ -5,5 +5,8 @@
     <span class="badge">{{persoon.id}}</span> {{persoon.voornaam}}
   </li>
 </ul>
+<div *ngIf="!personen">
+  Geen Personen gevonden!
+</div>
 
 <app-persoon-detail [persoon]="selectedPersoon"></app-persoon-detail>
