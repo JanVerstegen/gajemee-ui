@@ -7,5 +7,4 @@ export class Persoon {
     woonplaats: string;
     verjaardag: string;
     voorkeuren: string[];
-
   }

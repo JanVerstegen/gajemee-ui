@@ -6,7 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { PersonenComponent } from './personen/personen.component';
 import { PersoonDetailComponent } from './persoon-detail/persoon-detail.component';
-import { PersoonService } from "./persoon.service";
+import { PersoonService } from "./personen/persoon.service";
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
 import { LoginComponent } from './login/login.component';
