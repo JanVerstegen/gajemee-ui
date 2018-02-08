@@ -8,7 +8,7 @@ import { PersonenComponent } from './personen/personen.component';
 import { PersoonDetailComponent } from './persoon-detail/persoon-detail.component';
 import { PersoonService } from "./personen/persoon.service";
 import { MessagesComponent } from './messages/messages.component';
-import { MessageService } from './message.service';
+import { MessageService } from './messages/message.service';
 import { LoginComponent } from './login/login.component';
 import { SearchComponent } from './search/search.component';
 import { CategoriesComponent } from './categories/categories.component';
