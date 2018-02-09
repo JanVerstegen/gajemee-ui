@@ -19,6 +19,7 @@ export class PersoonService {
 
   getPersonen(): Observable<Persoon[]> {
     // Todo: send the message _after_ fetching the Personen
+    //return this.http.get("http://localhost:8082/api/persoon").map(res => res.json());
     return this.http.get("http://localhost:8080/persoon").map(res => res.json());
   }
 }

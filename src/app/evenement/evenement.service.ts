@@ -8,10 +8,10 @@ import { of } from 'rxjs/observable/of';
 import 'rxjs/add/operator/map'
 
 import { Evenement } from "./evenement";
-import { MessageService } from "../messages/message.service";
 
 @Injectable()
 export class EvenementService {
+
   private headers = new Headers({ 'Content-Type': 'application/json' });
 
   constructor(private http: Http) { }
