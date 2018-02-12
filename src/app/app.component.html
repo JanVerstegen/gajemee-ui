@@ -3,20 +3,39 @@
 
 <head>
     <title>GaJeMee?!</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
+
+    <!-- Header -->
     <div class="container">
         <header>
+            <!-- Navbar -->
+            <div class="logo-header">
+                <a class="gjm-logo" href="http://localhost:4200/">
+                    <img src="assets/images/gajemeelogo.png" alt="gajemee" height="50">
+                </a>
+            </div>
             <div class="top">
+                <button>
+                    <i class="fa fa-envelope-o"></i>
+                    +1
+                </button>
                 <button (click)="clickLogin()">Inloggen</button>
 
                 <button>Registreren</button>
             </div>
-            <img src="assets/images/gajemeelogo.png" alt="gajemee" height="100" width="400">
         </header>
+
     </div>
+    <img src="assets/images/gajemeeblack.jpg" alt="gajemee" width="100%">
     <hr>
     <h2>
         <b>
@@ -47,10 +66,18 @@
     <hr>
     <details>
         <summary>
-            Categorien
+            <i class="material-icons">apps</i> Categorien
         </summary>
         <app-categories></app-categories>
     </details>
+
+    <hr>
+    <h3>NAVIGATION</h3>
+    <nav>
+        <a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
+        <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+    </nav>
+    <router-outlet></router-outlet>
 
     <hr>
     <h3>
@@ -67,6 +94,7 @@
 
     </h3>
     <app-createprofile></app-createprofile>
+    <!-- Footer -->
     <footer>Copyright &copy; 'n stuff</footer>
 </body>
 

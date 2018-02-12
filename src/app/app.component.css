@@ -1,15 +1,21 @@
 /* AppComponent's private CSS styles */
-h1 {
-  font-size: 1.2em;
-  color: rgb(255, 255, 255);
-  margin-bottom: 0;
+html {
+  display:flex;
+  width:100%;
+  height:100%;
 }
-h2 {
-  font-size: 2em;
-  color: rgb(0, 0, 0);
-  margin-top: 0;
-  padding-top: 0;
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Lato", sans-serif
 }
+
+.w3-bar,h1,button {
+  font-family: "Montserrat", sans-serif
+}
+
+.fa-anchor,.fa-coffee {
+  font-size:200px
+}
+
 nav a {
   padding: 5px 10px;
   text-decoration: none;
@@ -33,7 +39,11 @@ div.container {
   width: 100%;
   border: 1px solid gray;
 }
-header, footer {
+header {
+  display: block;
+}
+
+footer {
   padding: 1em;
   color: white;
   background-color: rgb(73, 73, 73);
@@ -51,13 +61,130 @@ input[type=text] {
 button {
   background-color: #4CAF50;
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  padding: 8px 12px;
+  margin: 8px 1px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 18px
 }
 
 button:hover {
   background-color: #45a049;
+}
+
+.logo-header {
+  display: block;
+  float: left;
+  margin: 0px 20px;
+  width: 110px;
+  height: 60px;
+}
+
+.gjm-logo {
+  display: block;
+  float: left;
+  margin: 0px 20px;
+}
+
+a {
+  background-color: transparent;
+}
+
+body .global-header {
+  text-transform: uppercase;
+  border: none;
+  border-left: 1px solid #EFF2F5;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  border-radius: 0px;
+  color: #45494E;
+}
+
+.header-link {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 19px;
+  vertical-align: top;
+  padding: 22px 20px 19px 20px;
+}
+
+.navbar {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+  font-size: 24px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 26px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: rgb(201, 201, 201);
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
 }

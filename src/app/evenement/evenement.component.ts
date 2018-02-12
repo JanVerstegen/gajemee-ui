@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Evenement } from "../evenement";
+import { Evenement } from "./evenement";
 import { EvenementService } from "./evenement.service";
 
 @Component({

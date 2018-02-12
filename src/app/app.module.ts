@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
@@ -19,14 +20,27 @@ import { CreateeventComponent } from './createevent/createevent.component';
 import { EvenementComponent } from './evenement/evenement.component';
 import { EvenementService } from "./evenement/evenement.service";
 
+const appRoutes: Routes = [
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: CreateprofileComponent },
+  { path: 'createevent', component: CreateeventComponent },
+  // { path: '**', component: PageNotFoundComponent }
+];
+
 @NgModule({
   declarations: [AppComponent, PersonenComponent,
     PersoonDetailComponent, MessagesComponent,
     LoginComponent, SearchComponent,
     CategoriesComponent, CreateprofileComponent,
     CreateeventComponent, EvenementComponent,],
-  imports: [BrowserModule, FormsModule, HttpModule, HttpClientModule,],
-  providers: [PersoonService, MessageService,EvenementService,],
+  imports: [BrowserModule, FormsModule, 
+    HttpModule, HttpClientModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // <-- debugging purposes only
+    )
+  ],
+  providers: [PersoonService, MessageService, EvenementService,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
