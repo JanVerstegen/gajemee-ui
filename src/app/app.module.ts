@@ -19,12 +19,13 @@ import { CreateprofileComponent } from './createprofile/createprofile.component'
 import { CreateeventComponent } from './createevent/createevent.component';
 import { EvenementComponent } from './evenement/evenement.component';
 import { EvenementService } from "./evenement/evenement.service";
+import { PageNotFoundComponent } from './not-found/not-found.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: CreateprofileComponent },
   { path: 'createevent', component: CreateeventComponent },
-  // { path: '**', component: PageNotFoundComponent }
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
@@ -32,7 +33,7 @@ const appRoutes: Routes = [
     PersoonDetailComponent, MessagesComponent,
     LoginComponent, SearchComponent,
     CategoriesComponent, CreateprofileComponent,
-    CreateeventComponent, EvenementComponent,],
+    CreateeventComponent, EvenementComponent, PageNotFoundComponent,],
   imports: [BrowserModule, FormsModule, 
     HttpModule, HttpClientModule,
     RouterModule.forRoot(

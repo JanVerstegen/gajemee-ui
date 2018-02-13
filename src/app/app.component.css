@@ -188,3 +188,8 @@ li a:hover:not(.active) {
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
+
+.webpage {
+  padding: 0px 100px
+
+}

@@ -6,7 +6,7 @@ import { PersoonService } from './persoon.service';
 @Component({
   selector: 'app-personen',
   templateUrl: './personen.component.html',
-  styleUrls: ['./personen.component.css']
+  styleUrls: ['./personen.component.css'],
 })
 export class PersonenComponent implements OnInit {
 

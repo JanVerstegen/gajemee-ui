@@ -12,8 +12,6 @@
 </head>
 
 <body>
-
-
     <!-- Header -->
     <div class="container">
         <header>
@@ -23,7 +21,7 @@
                     <img src="assets/images/gajemeelogo.png" alt="gajemee" height="50">
                 </a>
             </div>
-            <div class="top">
+            <div class="top" style="padding: 0px 10px 0px 0px">
                 <button>
                     <i class="fa fa-envelope-o"></i>
                     +1
@@ -33,67 +31,70 @@
                 <button>Registreren</button>
             </div>
         </header>
-
     </div>
     <img src="assets/images/gajemeeblack.jpg" alt="gajemee" width="100%">
     <hr>
-    <h2>
-        <b>
-            <u>Bij Jou In De Buurt</u>
-        </b>
-    </h2>
-    <table>
-        <tr>
-            <td>
-                <button>
-                    < </button>
-            </td>
-            <td>
-                <input type="image" src="assets/images/gajemeeblack.jpg" width="400" height="100" alt="Submit">
-            </td>
-            <td>
-                <input type="image" src="assets/images/gajemeeblack.jpg" width="400" height="100" alt="Submit">
-            </td>
-            <td>
-                <input type="image" src="assets/images/gajemeeblack.jpg" width="400" height="100" alt="Submit">
-            </td>
-            <td>
-                <button>></button>
-            </td>
-        </tr>
-    </table>
 
-    <hr>
-    <details>
-        <summary>
-            <i class="material-icons">apps</i> Categorien
-        </summary>
-        <app-categories></app-categories>
-    </details>
+    <div class="webpage">
 
-    <hr>
-    <h3>NAVIGATION</h3>
-    <nav>
-        <a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
-        <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
-    </nav>
-    <router-outlet></router-outlet>
+        <h2>
+            <b>
+                <u>Bij Jou In De Buurt</u>
+            </b>
+        </h2>
+        <table>
+            <tr>
+                <td>
+                    <button>
+                        < </button>
+                </td>
+                <td>
+                    <input type="image" src="assets/images/gajemeeblack.jpg" width="400" height="100" alt="Submit">
+                </td>
+                <td>
+                    <input type="image" src="assets/images/gajemeeblack.jpg" width="400" height="100" alt="Submit">
+                </td>
+                <td>
+                    <input type="image" src="assets/images/gajemeeblack.jpg" width="400" height="100" alt="Submit">
+                </td>
+                <td>
+                    <button>></button>
+                </td>
+            </tr>
+        </table>
 
-    <hr>
-    <h3>
-        <app-personen></app-personen>
         <hr>
-        <app-evenement></app-evenement>
-        <hr>
-        <app-messages></app-messages>
-        <hr>
-        <app-login></app-login>
-        <hr>
-        <app-search></app-search>
-        <hr>
+        <details>
+            <summary>
+                <i class="material-icons">apps</i> Categorien
+            </summary>
+            <app-categories></app-categories>
+        </details>
 
-    </h3>
-    <app-createprofile></app-createprofile>
+        <hr>
+        <h3>NAVIGATION</h3>
+        <nav>
+            <a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
+            <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+        </nav>
+        <router-outlet></router-outlet>
+
+        <hr>
+        <h3>
+            <app-personen></app-personen>
+            <hr>
+            <app-evenement></app-evenement>
+            <hr>
+            <app-messages></app-messages>
+            <hr>
+            <app-login></app-login>
+            <hr>
+            <app-search></app-search>
+            <hr>
+
+        </h3>
+        <app-createprofile></app-createprofile>
+    </div>
     <!-- Footer -->
     <footer>Copyright &copy; 'n stuff</footer>
 </body>
