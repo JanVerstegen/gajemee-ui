@@ -19,7 +19,7 @@ export class AppComponent {
 
   private getMyBlog() {
     return this._http.get('http://localhost:8080/personen')
-      .map((res: Response) => res.json())
+      .map((res: Response) => res.text())
       .subscribe(data => {
         this.data = data;
         console.log(this.data);
