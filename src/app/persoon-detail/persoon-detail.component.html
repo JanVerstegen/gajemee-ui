@@ -1,16 +1,62 @@
 <div *ngIf="persoon">
 
   <h2>{{ persoon.voornaam | uppercase }} Details</h2>
-  <div>
-    <span>id: </span>{{persoon.id}}</div>
-  <div>
-    <label>voornaam:
-      <input [(ngModel)]="persoon.voornaam" placeholder="voornaam" />
-    </label>
-  </div>
-  <div>
-    <label>achternaam:
-      <input [(ngModel)]="persoon.achternaam" placeholder="achternaam">
-    </label>
-  </div>
+  <div><span>id: </span>{{persoon.id}}</div>
+  
+  <table>
+    <tr>
+      <td>voornaam:</td>
+      <td>{{persoon.voornaam}}</td>
+      <td><input [(ngModel)]="persoon.voornaam" placeholder="voornaam"></td>
+    </tr>
+    <tr>
+        <td>achternaam:</td>
+        <td>{{persoon.achternaam}}</td>
+        <td><input [(ngModel)]="persoon.achternaam" placeholder="achternaam"></td>
+    </tr>
+    <tr>
+        <td>email:</td>
+        <td>{{persoon.email}}</td>
+        <td><input [(ngModel)]="persoon.email" placeholder="email"></td>
+    </tr>
+    <tr>
+        <td>wachtwoord:</td>
+        <td>{{persoon.wachtwoord}}</td>
+        <td><input [(ngModel)]="persoon.wachtwoord" placeholder="wachtwoord"></td>
+    </tr>
+    <tr>
+        <td>woonplaats:</td>
+        <td>{{persoon.woonplaats}}</td>
+        <td><input [(ngModel)]="persoon.woonplaats" placeholder="woonplaats"></td>
+    </tr>
+    <tr>
+        <td>active:</td>
+        <td>{{persoon.active}}</td>
+        <td><input [(ngModel)]="persoon.active" placeholder="active"></td>
+    </tr>
+    <tr>
+        <td>verjaardag:</td>
+        <td>{{persoon.verjaardag}}</td>
+        <td><input [(ngModel)]="persoon.verjaardag" placeholder="verjaardag"></td>
+    </tr>
+    <tr>
+        <td>voorkeuren:</td>
+        <td>
+         <ul>
+           <li *ngFor="let categorie of persoon.voorkeuren">
+              {{persoon.voorkeuren}}
+           </li>
+         </ul>
+         </td>
+        <td>
+            <li *ngFor="let categorie of persoon.voorkeuren">
+              <input [(ngModel)]="persoon.voorkeuren" placeholder="voorkeuren">
+            </li></td>
+    </tr>
+    <tr>
+        <td>berichten:</td>
+        <td>{{persoon.berichten}}</td>
+        <td><input [(ngModel)]="persoon.berichten" placeholder="berichten"></td>
+    </tr>
+  </table>
 </div>

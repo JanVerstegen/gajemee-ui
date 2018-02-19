@@ -2,7 +2,8 @@
   input[type=text],
   input[type=email],
   input[type=password],
-  select {
+  select
+  {
     width: 40%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -11,7 +12,18 @@
     border-radius: 4px;
     box-sizing: border-box;
   }
-  input[type=date]{
+
+ .search-specifics {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=date] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -43,94 +55,102 @@
   }
 </style>
 
-<h2><u>Search</u></h2>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<h2>
+  <u>Search</u>
+</h2>
 <div>
   <input type="text" value="{{input_search}}" placeholder="Search...">
-  <br>
-  <input type="submit" value="Search">
 
+  <button>
+    <i class="fa fa-search"></i>
+  </button>
+<br>
+  <div class="search-specifics">
 
-
-  <table>
-    <tr>
-      <td>van</td>
-      <td>
-        <input type="date">
-      </td>
-      <td>tot</td>
-      <td>
-        <input type="date">
-      </td>
-    </tr>
-  </table>
-  <details>
-    <summary>
-      Categorien
-    </summary>
     <table>
       <tr>
+        <td>van</td>
         <td>
-          <input type="checkbox" value="checked">
+          <input type="date">
         </td>
-        <td>CREATIEF </td>
+        <td>tot</td>
         <td>
-          <input type="checkbox">
+          <input type="date">
         </td>
-        <td>CONCERTEN </td>
-        <td>
-          <input type="checkbox">
-        </td>
-        <td>DANSEN </td>
-      </tr>
-      <tr>
-        <td>
-          <input type="checkbox">
-        </td>
-        <td>ETEN_EN_DRINKEN </td>
-        <td>
-          <input type="checkbox">
-        </td>
-        <td>FILMS </td>
-        <td>
-          <input type="checkbox">
-        </td>
-        <td>LITERAIR </td>
-      </tr>
-      <tr>
-        <td>
-          <input type="checkbox">
-        </td>
-        <td>MUSEUM </td>
-        <td>
-          <input type="checkbox">
-        </td>
-        <td>ONTSPANNING </td>
-        <td>
-          <input type="checkbox">
-        </td>
-        <td>POLITIEK </td>
-      </tr>
-      <tr>
-        <td>
-          <input type="checkbox">
-        </td>
-        <td>SPELLEN </td>
-        <td>
-          <input type="checkbox">
-        </td>
-        <td>SPORTIEF </td>
-        <td>
-          <input type="checkbox">
-        </td>
-        <td>THEATER </td>
-      </tr>
-      <tr>
-        <td>
-          <input type="checkbox">
-        </td>
-        <td>WETENSCHAP </td>
       </tr>
     </table>
+    <details>
+      <summary>
+        <i class="fa fa-tags"></i> Categorien
+      </summary>
+      <table>
+        <tr>
+          <td>
+            <input type="checkbox" value="checked">
+          </td>
+          <td>CREATIEF </td>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>CONCERTEN </td>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>DANSEN </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>ETEN_EN_DRINKEN </td>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>FILMS </td>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>LITERAIR </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>MUSEUM </td>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>ONTSPANNING </td>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>POLITIEK </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>SPELLEN </td>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>SPORTIEF </td>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>THEATER </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox">
+          </td>
+          <td>WETENSCHAP </td>
+        </tr>
+      </table>
 
-  </details>
+    </details>
+
+  </div>
 </div>

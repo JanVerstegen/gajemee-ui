@@ -27,39 +27,83 @@
                     +1
                 </button>
                 <button (click)="clickLogin()">Inloggen</button>
-
                 <button>Registreren</button>
             </div>
         </header>
     </div>
-    <img src="assets/images/gajemeeblack.jpg" alt="gajemee" width="100%">
-    <hr>
+    <div id="content">
+        <section id="image-container">
+            <img src="assets/images/head-bios.jpg" alt="gajemee" width="100%" style="max-height: 400px">
+        </section>
+    </div>
 
     <div class="webpage">
+
+        <div class="overflow">
+            <div class="l-align-center homepage-search-card card">
+                <h1>Ontdek nieuwe evenementen</h1>
+                <div>
+                    <app-search></app-search>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
+            <a routerLink="/login" routerLinkActive="active">Login</a>
+            <a routerLink="/register" routerLinkActive="active">Register</a>
+            <a routerLink="/search" routerLinkActive="active">Search</a>
+            <a routerLink="/createevent" routerLinkActive="active">Create Event</a>
+            <a routerLink="/personen" routerLinkActive="active">Personen</a>
+            <a routerLink="/events" routerLinkActive="active">Events</a>
+        </nav>
+        <hr>
+        <router-outlet></router-outlet>
+        <hr>
 
         <h2>
             <b>
                 <u>Bij Jou In De Buurt</u>
             </b>
         </h2>
+
         <table>
             <tr>
                 <td>
-                    <button>
-                        < </button>
-                </td>
-                <td>
-                    <input type="image" src="assets/images/gajemeeblack.jpg" width="400" height="100" alt="Submit">
-                </td>
-                <td>
-                    <input type="image" src="assets/images/gajemeeblack.jpg" width="400" height="100" alt="Submit">
-                </td>
-                <td>
-                    <input type="image" src="assets/images/gajemeeblack.jpg" width="400" height="100" alt="Submit">
-                </td>
-                <td>
-                    <button>></button>
-                </td>
+                    <div class="container">
+                        <img src="assets/images/gajemeeblack.jpg" alt="Submit" style="width:400px">
+                        <br>
+                        <i class="fa fa-tags"></i>
+                        <a href="">#Eten&Drinken</a>
+                        <a href="">#Ontspanning</a>
+                        <td style="text-align: right">
+                            <button class="btn">Ga</button>
+                    </div>
+                    </td>
+
+                    <td>
+                        <div class="container">
+                            <img src="assets/images/gajemeeblack.jpg" alt="Submit" style="width:400px">
+                            <br>
+                            <i class="fa fa-tags"></i>
+                            <a href="">#Eten&Drinken</a>
+                            <a href="">#Ontspanning</a>
+                            <td style="text-align: right">
+                                <button class="btn">Ga</button>
+                        </div>
+                        </td>
+
+                        <td>
+                            <div class="container">
+                                <img src="assets/images/gajemeeblack.jpg" alt="Submit" style="width:400px">
+                                <br>
+                                <i class="fa fa-tags"></i>
+                                <a href="">#Eten&Drinken</a>
+                                <a href="">#Ontspanning</a>
+                                <td style="text-align: right">
+                                    <button class="btn">Ga</button>
+                            </div>
+                            </td>
             </tr>
         </table>
 
@@ -70,33 +114,9 @@
             </summary>
             <app-categories></app-categories>
         </details>
-
-        <hr>
-        <h3>NAVIGATION</h3>
-        <nav>
-            <a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
-            <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
-        </nav>
-        <router-outlet></router-outlet>
-
-        <hr>
-        <h3>
-            <app-personen></app-personen>
-            <hr>
-            <app-evenement></app-evenement>
-            <hr>
-            <app-messages></app-messages>
-            <hr>
-            <app-login></app-login>
-            <hr>
-            <app-search></app-search>
-            <hr>
-
-        </h3>
-        <app-createprofile></app-createprofile>
     </div>
     <!-- Footer -->
-    <footer>Copyright &copy; 'n stuff</footer>
+    <footer><i class="fa fa-copyright"></i> 2018 Gajemee</footer>
 </body>
 
 </html>

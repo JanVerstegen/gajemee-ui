@@ -5,6 +5,6 @@ export class Persoon {
     email: string;
     wachtwoord: string;
     woonplaats: string;
-    verjaardag: string;
-    voorkeuren: string[];
+    active: boolean;
+    voorkeuren: Enumerator;
   }

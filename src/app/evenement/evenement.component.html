@@ -1,20 +1,26 @@
 <style>
-    div {
-      border-radius: 5px;
-      background-color: #f2f2f2;
-      padding: 20px;
-    }
-  </style>
-  
-  <h2><u>Mijn Evenementen</u></h2>
-  
-  <div>
-    <ul class="evenementen">
-      <li *ngFor="let evenement of evenementen" (click)="onSelect(evenement)">
-        <span class="badge">{{evenement.id}}</span> {{evenement.evenement_naam}}
-      </li>
-    </ul>
-    <div *ngIf="!evenementen">
-      Geen evenementen gevonden!
-    </div>
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+</style>
+
+<h2>
+  <u>Mijn Evenementen</u>
+</h2>
+
+<div>
+  <ul class="evenementen">
+    <li *ngFor="let evenement of evenementen" (click)="onSelect(evenement)">
+      <span class="badge">{{evenement.id}}</span> {{evenement.evenement_naam}}
+    </li>
+  </ul>
+  <div *ngIf="!evenementen">
+    Geen evenementen gevonden!
   </div>
+</div>
+
+<h1>Angular maps</h1>
+
+<div #gmap style="width:50%;height:400px"></div>

@@ -4,3 +4,14 @@ input[type=text] {
     box-sizing: border-box;
     font-size: 1.2em;
   }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    margin: 8px 1px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px
+  }

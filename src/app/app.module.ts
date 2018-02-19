@@ -20,11 +20,18 @@ import { CreateeventComponent } from './createevent/createevent.component';
 import { EvenementComponent } from './evenement/evenement.component';
 import { EvenementService } from "./evenement/evenement.service";
 import { PageNotFoundComponent } from './not-found/not-found.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: CreateprofileComponent },
+  { path: 'search', component: SearchComponent },
   { path: 'createevent', component: CreateeventComponent },
+  { path: 'personen', component: PersonenComponent },
+  { path: 'events', component: EvenementComponent },
+  
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -33,8 +40,8 @@ const appRoutes: Routes = [
     PersoonDetailComponent, MessagesComponent,
     LoginComponent, SearchComponent,
     CategoriesComponent, CreateprofileComponent,
-    CreateeventComponent, EvenementComponent, PageNotFoundComponent,],
-  imports: [BrowserModule, FormsModule, 
+    CreateeventComponent, EvenementComponent, PageNotFoundComponent, HomeComponent, AboutComponent,],
+  imports: [BrowserModule, FormsModule,
     HttpModule, HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
