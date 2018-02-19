@@ -6,5 +6,4 @@ export class Persoon {
     wachtwoord: string;
     woonplaats: string;
     active: boolean;
-    voorkeuren: Enumerator;
   }

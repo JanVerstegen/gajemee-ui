@@ -24,6 +24,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
+  { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: CreateprofileComponent },
   { path: 'search', component: SearchComponent },
@@ -31,7 +32,7 @@ const appRoutes: Routes = [
   { path: 'personen', component: PersonenComponent },
   { path: 'events', component: EvenementComponent },
   
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
 

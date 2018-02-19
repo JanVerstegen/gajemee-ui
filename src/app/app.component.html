@@ -6,8 +6,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -21,6 +19,17 @@
                     <img src="assets/images/gajemeelogo.png" alt="gajemee" height="50">
                 </a>
             </div>
+            <div class="navbar">
+                <nav>
+                    <a routerLink="/home" routerLinkActive="active">Home</a>
+                    <a routerLink="/login" routerLinkActive="active">Login</a>
+                    <a routerLink="/register" routerLinkActive="active">Register</a>
+                    <a routerLink="/search" routerLinkActive="active">Search</a>
+                    <a routerLink="/createevent" routerLinkActive="active">Create Event</a>
+                    <a routerLink="/personen" routerLinkActive="active">Personen</a>
+                    <a routerLink="/events" routerLinkActive="active">Events</a>
+                </nav>
+            </div>
             <div class="top" style="padding: 0px 10px 0px 0px">
                 <button>
                     <i class="fa fa-envelope-o"></i>
@@ -31,33 +40,8 @@
             </div>
         </header>
     </div>
-    <div id="content">
-        <section id="image-container">
-            <img src="assets/images/head-bios.jpg" alt="gajemee" width="100%" style="max-height: 400px">
-        </section>
-    </div>
 
     <div class="webpage">
-
-        <div class="overflow">
-            <div class="l-align-center homepage-search-card card">
-                <h1>Ontdek nieuwe evenementen</h1>
-                <div>
-                    <app-search></app-search>
-                </div>
-            </div>
-        </div>
-
-        <nav>
-            <a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
-            <a routerLink="/login" routerLinkActive="active">Login</a>
-            <a routerLink="/register" routerLinkActive="active">Register</a>
-            <a routerLink="/search" routerLinkActive="active">Search</a>
-            <a routerLink="/createevent" routerLinkActive="active">Create Event</a>
-            <a routerLink="/personen" routerLinkActive="active">Personen</a>
-            <a routerLink="/events" routerLinkActive="active">Events</a>
-        </nav>
-        <hr>
         <router-outlet></router-outlet>
         <hr>
 
@@ -116,7 +100,8 @@
         </details>
     </div>
     <!-- Footer -->
-    <footer><i class="fa fa-copyright"></i> 2018 Gajemee</footer>
+    <footer>
+        <i class="fa fa-copyright"></i> 2018 Gajemee</footer>
 </body>
 
 </html>
