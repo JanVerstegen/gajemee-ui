@@ -20,3 +20,14 @@
 
   <app-persoon-detail [persoon]="selectedPersoon"></app-persoon-detail>
 </div>
+
+<div>
+  <label>Persoon Voornaam:
+<input #persoonNaam>
+  </label>
+
+  <button (onclick)="addPersoon(persoonNaam.value)">
+    add
+  </button>
+  {{clickMessage}}
+</div>
