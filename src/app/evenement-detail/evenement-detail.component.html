@@ -1,15 +1,15 @@
 <div *ngIf="evenement">
 
-  <h2>{{ evenement.evenement_naam | uppercase }} Details</h2>
+  <h2>{{ evenement.evenementNaam | uppercase }} Details</h2>
   <div>
       <span>id: </span>{{evenement.id}}</div>
 
   <table>
       <tr>
           <td>naam:</td>
-          <td>{{evenement.evenement_naam}}</td>
+          <td>{{evenement.evenementNaam}}</td>
           <td>
-              <input [(ngModel)]="evenement.evenementNaam" placeholder="evenement_naam">
+              <input [(ngModel)]="evenement.evenementNaam" placeholder="evenementNaam">
           </td>
       </tr>
       <tr>
@@ -28,16 +28,16 @@
       </tr>
       <tr>
           <td>aanvangsDatumTijd:</td>
-          <td>{{evenement.aanvangsDatumTijd}}</td>
+          <td>{{evenement.aanvangsDatumTijd | date : 'medium' : timezone}}</td>
           <td>
               <input [(ngModel)]="evenement.aanvangsDatumTijd" placeholder="aanvangsDatumTijd">
           </td>
       </tr>
       <tr>
-          <td>aanvangsDatumTijd:</td>
-          <td>{{evenement.aanvangsDatumTijd}}</td>
+          <td>eindDatumTijd:</td>
+          <td>{{evenement.eindDatumTijd | date : 'medium' : timezone}}</td>
           <td>
-              <input [(ngModel)]="evenement.aanvangsDatumTijd" placeholder="aanvangsDatumTijd">
+              <input [(ngModel)]="evenement.eindDatumTijd" placeholder="eindDatumTijd">
           </td>
       </tr>
       <tr>
@@ -81,6 +81,14 @@
               <div *ngFor="let c of evenement.categorie">
                   {{c.categorienaam | json}}
               </div>
+          </div>
+      </tr>
+      <tr>
+          <td>organisator:</td>
+          <div class="evenement.organisator">
+              <!-- <div *ngFor="let persoon of evenement.organisator">
+                  {{persoon.voornaam | json}}
+              </div> -->
           </div>
       </tr>
   </table>

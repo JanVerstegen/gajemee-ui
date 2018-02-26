@@ -36,6 +36,7 @@ export class EvenementComponent implements OnInit {
 
     var map: google.maps.Map = new google.maps.Map(
       document.getElementById("map"), mapProp);
+
     var markerSimple = new google.maps.Marker({
       label: "A",
       position: { lat: 52.115960, lng: 5.049655 },

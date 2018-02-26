@@ -11,9 +11,9 @@
 </h2>
 
 <div>
-  <ul class="evenementen">
+  <ul class="personen">
     <li *ngFor="let evenement of evenementen" (click)="onSelect(evenement)">
-      <span class="badge">{{evenement.id}}</span> {{evenement.evenement_naam}}
+      <span class="badge">{{evenement.id}}</span>{{evenement.evenementNaam}}
     </li>
   </ul>
   <div *ngIf="!evenementen">
