@@ -22,6 +22,7 @@ import { EvenementService } from "./evenement/evenement.service";
 import { PageNotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { EvenementDetailComponent } from './evenement-detail/evenement-detail.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -41,7 +42,7 @@ const appRoutes: Routes = [
     PersoonDetailComponent, MessagesComponent,
     LoginComponent, SearchComponent,
     CategoriesComponent, CreateprofileComponent,
-    CreateeventComponent, EvenementComponent, PageNotFoundComponent, HomeComponent, AboutComponent,],
+    CreateeventComponent, EvenementComponent, PageNotFoundComponent, HomeComponent, AboutComponent, EvenementDetailComponent,],
   imports: [BrowserModule, FormsModule,
     HttpModule, HttpClientModule,
     RouterModule.forRoot(

@@ -21,7 +21,7 @@ import { PersoonService } from './persoon.service';
     </div>
     <app-persoon-detail [persoon]="selectedPersoon"></app-persoon-detail>
   </div>
-  
+  <hr>
   <div>
     <label>Persoon Voornaam:
       <input #persoonNaam (keyup.enter)="add(persoonNaam.value)"
@@ -58,20 +58,26 @@ export class PersonenComponent implements OnInit {
     this.persoonService.getPersonen().subscribe(
       res => {
         this.personen = res;
-        console.log("Success : "+this.personen);
+        console.log("Success : " + this.personen);
       }
-    );     
+    );
   }
 
   add(voornaam: string): void {
     this.clickMessage = "Success : " + voornaam;
     console.log("Success : " + voornaam)
-    
+
     this.editPersoon = undefined;
     voornaam = voornaam.trim();
     if (!voornaam) { return; }
 
-    const newPersoon: Persoon = { voornaam } as Persoon;
+    const newPersoon: Persoon = {
+      "achternaam": "asd",
+      "email": "asd@test.com",
+      "voornaam": "asd",
+      "wachtwoord": "A1bcdefghi@"
+    } as Persoon;
+
     this.persoonService.addPersoon(newPersoon)
       .subscribe(persoon => this.personen.push(persoon));
   }

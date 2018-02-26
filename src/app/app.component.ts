@@ -14,18 +14,9 @@ export class AppComponent {
   data: any = null;
 
   constructor(private _http: Http) {
-    this.getMyBlog();
+    
   }
-
-  private getMyBlog() {
-    return this._http.get('http://localhost:8080/personen')
-      .map((res: Response) => res.text())
-      .subscribe(data => {
-        this.data = data;
-        console.log(this.data);
-      });
-  }
-
+  
   clickLogin() {
     alert("The login did a thing! whooo!");
   }

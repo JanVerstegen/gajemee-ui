@@ -1,0 +1,87 @@
+<div *ngIf="evenement">
+
+  <h2>{{ evenement.evenement_naam | uppercase }} Details</h2>
+  <div>
+      <span>id: </span>{{evenement.id}}</div>
+
+  <table>
+      <tr>
+          <td>naam:</td>
+          <td>{{evenement.evenement_naam}}</td>
+          <td>
+              <input [(ngModel)]="evenement.evenementNaam" placeholder="evenement_naam">
+          </td>
+      </tr>
+      <tr>
+          <td>plaats:</td>
+          <td>{{evenement.plaats}}</td>
+          <td>
+              <input [(ngModel)]="evenement.plaats" placeholder="plaats">
+          </td>
+      </tr>
+      <tr>
+          <td>adres:</td>
+          <td>{{evenement.adres}}</td>
+          <td>
+              <input [(ngModel)]="evenement.adres" placeholder="adres">
+          </td>
+      </tr>
+      <tr>
+          <td>aanvangsDatumTijd:</td>
+          <td>{{evenement.aanvangsDatumTijd}}</td>
+          <td>
+              <input [(ngModel)]="evenement.aanvangsDatumTijd" placeholder="aanvangsDatumTijd">
+          </td>
+      </tr>
+      <tr>
+          <td>aanvangsDatumTijd:</td>
+          <td>{{evenement.aanvangsDatumTijd}}</td>
+          <td>
+              <input [(ngModel)]="evenement.aanvangsDatumTijd" placeholder="aanvangsDatumTijd">
+          </td>
+      </tr>
+      <tr>
+          <td>active:</td>
+          <td>{{evenement.active}}</td>
+          <td>
+              <input [(ngModel)]="evenement.active" placeholder="active">
+          </td>
+      </tr>
+      <tr>
+          <td>uitnodigingstekst:</td>
+          <td>{{evenement.uitnodigingstekst}}</td>
+          <td>
+              <input [(ngModel)]="evenement.uitnodigingstekst" placeholder="uitnodigingstekst">
+          </td>
+      </tr>
+      <tr>
+          <td>categorie:</td>
+          <td>{{evenement.categorie}}</td>
+          <td>
+              <input [(ngModel)]="evenement.categorie" placeholder="categorie">
+          </td>
+      </tr>
+      <tr>
+          <td>organisator:</td>
+          <td>{{evenement.organisator}}</td>
+          <td>
+              <input [(ngModel)]="evenement.organisator" placeholder="organisator">
+          </td>
+      </tr>
+      <tr>
+          <td>aanwezigen:</td>
+          <td>{{evenement.aanwezigen}}</td>
+          <td>
+              <input [(ngModel)]="evenement.aanwezigen" placeholder="aanwezigen">
+          </td>
+      </tr>
+      <tr>
+          <td>categorie:</td>
+          <div class="evenement.categorie">
+              <div *ngFor="let c of evenement.categorie">
+                  {{c.categorienaam | json}}
+              </div>
+          </div>
+      </tr>
+  </table>
+</div>

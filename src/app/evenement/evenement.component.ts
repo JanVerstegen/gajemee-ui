@@ -15,8 +15,8 @@ export class EvenementComponent implements OnInit {
   @ViewChild('gmap') gmapElement: any;
   map: google.maps.Map;
 
-  latitude: number;
-  longitutde: number;
+  latitude: 52.115960;
+  longitutde: 5.049655;
 
   selectedEvenement: Evenement;
   evenementen: Evenement[];

@@ -19,6 +19,8 @@
   <div *ngIf="!evenementen">
     Geen evenementen gevonden!
   </div>
+
+  <app-evenement-detail [evenement]="selectedEvenement"></app-evenement-detail>
 </div>
 
 <h1>Angular maps</h1>
