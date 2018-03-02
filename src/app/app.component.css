@@ -3,43 +3,10 @@ html {
   width:100%;
   height:100%;
 }
-body,h1,h2,h3,h4,h5,h6 {
-  font-family: "Lato", sans-serif
-}
 
-.w3-bar,h1,button {
-  font-family: "Montserrat", sans-serif
-}
-
-.fa-anchor,.fa-coffee {
-  font-size:200px
-}
-
-nav a {
-  padding: 5px 10px;
-  text-decoration: none;
-  margin-top: 10px;
-  display: inline-block;
-  background-color: #eee;
-  border-radius: 4px;
-  text-align: center;
-}
-nav a:visited, a:link {
-  color: rgb(40, 51, 56);
-}
-nav a:hover {
-  color: #039be5;
-  background-color: #CFD8DC;
-}
-nav a.active {
-  color: #039be5;
-}
 div.container {
-  width: 100%;
+  width: auto;
   border: 1px solid gray;
-}
-header {
-  display: block;
 }
 
 footer {
@@ -49,9 +16,6 @@ footer {
   clear: left;
   text-align: center;
   border-top: #666A73 solid 6px;
-}
-div.top {
-  text-align: right
 }
 
 div.nav-header {
@@ -131,7 +95,7 @@ body .global-header {
   padding: 0;
   overflow: hidden;
   background-color:transparent;
-  position: fixed;
+  position: absolute;
   left: 30%;
   top: 0;
   width: 100%;
@@ -168,7 +132,6 @@ li a:hover:not(.active) {
 
 .webpage {
   padding: 0px 100px
-
 }
 
 .image-container {

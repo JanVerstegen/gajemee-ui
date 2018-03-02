@@ -5,6 +5,8 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { AppComponent } from './app.component';
 
 import { PersonenComponent } from './personen/personen.component';
@@ -23,6 +25,7 @@ import { PageNotFoundComponent } from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { EvenementDetailComponent } from './evenement-detail/evenement-detail.component';
+import { CarouselComponent } from "./carousel/carousel.component";
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -32,7 +35,7 @@ const appRoutes: Routes = [
   { path: 'createevent', component: CreateeventComponent },
   { path: 'personen', component: PersonenComponent },
   { path: 'events', component: EvenementComponent },
-  
+
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
@@ -42,10 +45,14 @@ const appRoutes: Routes = [
     PersoonDetailComponent, MessagesComponent,
     LoginComponent, SearchComponent,
     CategoriesComponent, CreateprofileComponent,
-    CreateeventComponent, EvenementComponent, PageNotFoundComponent, HomeComponent, AboutComponent, EvenementDetailComponent,],
+    CreateeventComponent, EvenementComponent,
+    PageNotFoundComponent, HomeComponent,
+    AboutComponent, EvenementDetailComponent,
+    CarouselComponent
+  ],
   imports: [BrowserModule, FormsModule,
     HttpModule, HttpClientModule,
-    RouterModule.forRoot(
+    NgbModule.forRoot(), RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
     )

@@ -10,39 +10,37 @@
 </head>
 
 <body>
+
     <!-- Header -->
-    <div class="container">
-        <header>
-            <!-- Navbar -->
+    <header>
+        <div class="container">
             <div class="logo-header">
                 <a class="gjm-logo" href="http://localhost:4200/">
                     <img src="assets/images/gajemeelogo.png" alt="gajemee" height="50">
                 </a>
             </div>
-            <div class="navbar">
-                <nav>
-                    <a routerLink="/home" routerLinkActive="active">Home</a>
-                    <a routerLink="/login" routerLinkActive="active">Login</a>
-                    <a routerLink="/register" routerLinkActive="active">Register</a>
-                    <a routerLink="/search" routerLinkActive="active">Search</a>
-                    <a routerLink="/createevent" routerLinkActive="active">Create Event</a>
-                    <a routerLink="/personen" routerLinkActive="active">Personen</a>
-                    <a routerLink="/events" routerLinkActive="active">Events</a>
-                </nav>
-            </div>
-            <div class="top" style="padding: 0px 10px 0px 0px">
-                <button>
-                    <i class="fa fa-envelope-o"></i>
-                    +1
-                </button>
-                <button (click)="clickLogin()">Inloggen</button>
-                <button>Registreren</button>
-            </div>
-        </header>
+        </div>
+    </header>
+
+    <!-- Page Interface -->
+    <router-outlet></router-outlet>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <nav>
+            <a routerLink="/home" routerLinkActive="active">Home</a>
+            <a routerLink="/login" routerLinkActive="active">Login</a>
+            <a routerLink="/register" routerLinkActive="active">Register</a>
+            <a routerLink="/search" routerLinkActive="active">Search</a>
+            <a routerLink="/createevent" routerLinkActive="active">Create Event</a>
+            <a routerLink="/personen" routerLinkActive="active">Personen</a>
+            <a routerLink="/events" routerLinkActive="active">Events</a>
+        </nav>
     </div>
+
     <!-- Page Layout -->
     <div class="webpage">
-        <router-outlet></router-outlet>
+
         <hr>
 
         <h2>
@@ -51,7 +49,7 @@
             </b>
         </h2>
 
-        <table>
+        <!-- <table>
             <tr>
                 <td>
                     <div class="container">
@@ -89,16 +87,9 @@
                             </div>
                             </td>
             </tr>
-        </table>
-
-        <hr>
-        <details>
-            <summary>
-                <i class="material-icons">apps</i> Categorien
-            </summary>
-            <app-categories></app-categories>
-        </details>
+        </table> -->
     </div>
+
     <!-- Footer -->
     <footer>
         <i class="fa fa-copyright"></i> 2018 Gajemee</footer>

@@ -26,6 +26,7 @@ export class EvenementComponent implements OnInit {
   ngOnInit() {
 
     this.getEvenementen();
+    this.getEvenementCat();
 
     var mapProp = {
       center: new google.maps.LatLng(52.115960, 5.049655),
@@ -51,6 +52,11 @@ export class EvenementComponent implements OnInit {
 
   getEvenementen(): void {
     this.evenementService.getEvenementen()
+      .subscribe(e => this.evenementen = e);
+  }
+
+  getEvenementCat(): void {
+    this.evenementService.getEvenementCat()
       .subscribe(e => this.evenementen = e);
   }
 

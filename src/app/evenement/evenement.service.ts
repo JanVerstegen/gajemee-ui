@@ -16,6 +16,7 @@ import { Evenement } from "./evenement";
 export class EvenementService {
 
   eventUrl = "http://localhost:8080/evenementen";
+  eventCatUrl = "http://localhost:8080/evenementen/categorie/id";
   eventPostUrl = "http://localhost:8080/personen/" + Persoon/*.id*/ + "/evenementen";
 
   private headers = new Headers({
@@ -28,6 +29,15 @@ export class EvenementService {
   getEvenementen(): Observable<Evenement[]> {
     // Todo: send the message _after_ fetching the Personen
     return this.http.get(this.eventUrl,
+      {
+        headers: this.headers
+      })
+      .map(res => res.json());
+  }
+
+  getEvenementCat(): Observable<Evenement[]> {
+    // Todo: send the message _after_ fetching the Personen
+    return this.http.get(this.eventCatUrl,
       {
         headers: this.headers
       })
