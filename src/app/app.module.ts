@@ -26,6 +26,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { EvenementDetailComponent } from './evenement-detail/evenement-detail.component';
 import { CarouselComponent } from "./carousel/carousel.component";
+import { EvenementCardComponent } from './evenement-card/evenement-card.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -48,7 +49,8 @@ const appRoutes: Routes = [
     CreateeventComponent, EvenementComponent,
     PageNotFoundComponent, HomeComponent,
     AboutComponent, EvenementDetailComponent,
-    CarouselComponent
+    CarouselComponent,
+    EvenementCardComponent
   ],
   imports: [BrowserModule, FormsModule,
     HttpModule, HttpClientModule,

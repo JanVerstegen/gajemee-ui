@@ -16,9 +16,4 @@ export class AppComponent {
   constructor(private _http: Http) {
     
   }
-  
-  clickLogin() {
-    alert("The login did a thing! whooo!");
-  }
-
 }
