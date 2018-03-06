@@ -4,6 +4,10 @@ html {
   height:100%;
 }
 
+body {
+  background-color: whitesmoke;
+}
+
 div.container {
   width: auto;
   border: 1px solid gray;
@@ -181,64 +185,8 @@ div {
 }
 
 .g-grid {
+  /* background-color: orange; */
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.events-list {
-
-}
-
-.event-cell {
-  overflow: visible;
-  font-size: 15px;
-  line-height: 22px;
-  font-weight: 400;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  letter-spacing: .5px;
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: top;
-  width: 33.333333333333%;
-}
-
-.event-card_body, .event-card_date {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  display: block;
-  color: #45494E;
-  font-size: 12px;
-  line-height: 18px;
-  height: 2em;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 5px 0 0;
-}
-
-.event-card_footer {
-  position: relative;
-  max-height: 3em;
-  line-height: 40px;
-  padding-right: 80px;
-  border-top: 1px solid #EFF2F5;
-  padding-left: 15px;
-}
-
-.event-card-actions {
-  position: absolute;
-  top: 0;
-  right: 0;
-  /* font-size: 0; */
-  line-height: 38px;
-}
-
-.event-card-tags {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
 }
